@@ -46,6 +46,8 @@ public class Vector {
 	
 	
 	public static void selectionSort(int[] v) {
+		if (v.length == 0)
+			throw new IllegalArgumentException();
 		for (int position = 0; position < v.length - 1; position++) {
 			int indexOfMin = position;
 			for (int index = position + 1; index < v.length; index++)

@@ -25,6 +25,11 @@ class VectorTest {
 		int[] v1 = {14, 21, 12, 7, 9};
 		Vector.selectionSort(v1);
 		assertArrayEquals(new int[] {7, 9, 12, 14, 21}, v1);
+		
+		//caso de vector vacío
+		Assertions.assertThrows(IllegalArgumentException.class, 
+				() -> Vector.selectionSort(new int[] {}) 
+			);
 	}
 
 }
