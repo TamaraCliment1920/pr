@@ -367,6 +367,7 @@ public partial class MainWindow
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.BVaciar.Clicked += new global::System.EventHandler(this.OnBVaciarClicked);
+		this.BC.Clicked += new global::System.EventHandler(this.OnBCClicked);
 		this.BSiete.Clicked += new global::System.EventHandler(this.OnBSieteClicked);
 		this.BOcho.Clicked += new global::System.EventHandler(this.OnBOchoClicked);
 		this.BNueve.Clicked += new global::System.EventHandler(this.OnBNueveClicked);

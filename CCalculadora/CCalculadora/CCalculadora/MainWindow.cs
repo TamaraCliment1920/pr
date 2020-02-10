@@ -91,7 +91,7 @@ public partial class MainWindow : Gtk.Window
         if (contador ==0) {
             String display = Pantalla.Text.ToString();
             Pantalla.DeleteText(0, Pantalla.Text.Length);
-            Pantalla.InsertText(display + ".");
+            Pantalla.InsertText(display+".");
             contador++;
         } 
     }
@@ -100,5 +100,10 @@ public partial class MainWindow : Gtk.Window
     {
         Pantalla.DeleteText(0, Pantalla.Text.Length);
         contador = 0;
+    }
+
+    protected void OnBCClicked(object sender, EventArgs e)
+    {
+        Pantalla.DeleteText(Pantalla.Text.Length-1, Pantalla.Text.Length);
     }
 }
