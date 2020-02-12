@@ -47,7 +47,7 @@ public partial class MainWindow
 
 	private global::Gtk.HBox hbox5;
 
-	private global::Gtk.Button BPunto;
+	private global::Gtk.Button BComa;
 
 	private global::Gtk.Button BCero;
 
@@ -64,6 +64,7 @@ public partial class MainWindow
 		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		this.BorderWidth = ((uint)(9));
+		this.Resizable = false;
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.vbox1 = new global::Gtk.VBox();
 		this.vbox1.Name = "vbox1";
@@ -99,7 +100,7 @@ public partial class MainWindow
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.BVaciar = new global::Gtk.Button();
-		this.BVaciar.WidthRequest = 130;
+		this.BVaciar.WidthRequest = 150;
 		this.BVaciar.HeightRequest = 40;
 		this.BVaciar.CanFocus = true;
 		this.BVaciar.Name = "BVaciar";
@@ -130,7 +131,7 @@ public partial class MainWindow
 		this.hbox2.Spacing = 6;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.BSiete = new global::Gtk.Button();
-		this.BSiete.WidthRequest = 43;
+		this.BSiete.WidthRequest = 50;
 		this.BSiete.HeightRequest = 40;
 		this.BSiete.CanFocus = true;
 		this.BSiete.Name = "BSiete";
@@ -143,7 +144,7 @@ public partial class MainWindow
 		w6.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.BOcho = new global::Gtk.Button();
-		this.BOcho.WidthRequest = 43;
+		this.BOcho.WidthRequest = 50;
 		this.BOcho.CanFocus = true;
 		this.BOcho.Name = "BOcho";
 		this.BOcho.UseUnderline = true;
@@ -155,7 +156,7 @@ public partial class MainWindow
 		w7.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.BNueve = new global::Gtk.Button();
-		this.BNueve.WidthRequest = 43;
+		this.BNueve.WidthRequest = 50;
 		this.BNueve.CanFocus = true;
 		this.BNueve.Name = "BNueve";
 		this.BNueve.UseUnderline = true;
@@ -167,7 +168,7 @@ public partial class MainWindow
 		w8.Fill = false;
 		// Container child hbox2.Gtk.Box+BoxChild
 		this.BDivide = new global::Gtk.Button();
-		this.BDivide.WidthRequest = 43;
+		this.BDivide.WidthRequest = 50;
 		this.BDivide.CanFocus = true;
 		this.BDivide.Name = "BDivide";
 		this.BDivide.UseUnderline = true;
@@ -188,7 +189,7 @@ public partial class MainWindow
 		this.hbox3.Spacing = 6;
 		// Container child hbox3.Gtk.Box+BoxChild
 		this.BCuatro = new global::Gtk.Button();
-		this.BCuatro.WidthRequest = 43;
+		this.BCuatro.WidthRequest = 50;
 		this.BCuatro.HeightRequest = 40;
 		this.BCuatro.CanFocus = true;
 		this.BCuatro.Name = "BCuatro";
@@ -201,7 +202,7 @@ public partial class MainWindow
 		w11.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
 		this.BCinco = new global::Gtk.Button();
-		this.BCinco.WidthRequest = 43;
+		this.BCinco.WidthRequest = 50;
 		this.BCinco.CanFocus = true;
 		this.BCinco.Name = "BCinco";
 		this.BCinco.UseUnderline = true;
@@ -213,7 +214,7 @@ public partial class MainWindow
 		w12.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
 		this.BSeis = new global::Gtk.Button();
-		this.BSeis.WidthRequest = 43;
+		this.BSeis.WidthRequest = 50;
 		this.BSeis.CanFocus = true;
 		this.BSeis.Name = "BSeis";
 		this.BSeis.UseUnderline = true;
@@ -225,7 +226,7 @@ public partial class MainWindow
 		w13.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
 		this.BMultiplica = new global::Gtk.Button();
-		this.BMultiplica.WidthRequest = 43;
+		this.BMultiplica.WidthRequest = 50;
 		this.BMultiplica.HeightRequest = 0;
 		this.BMultiplica.CanFocus = true;
 		this.BMultiplica.Name = "BMultiplica";
@@ -247,7 +248,7 @@ public partial class MainWindow
 		this.hbox4.Spacing = 6;
 		// Container child hbox4.Gtk.Box+BoxChild
 		this.BUno = new global::Gtk.Button();
-		this.BUno.WidthRequest = 43;
+		this.BUno.WidthRequest = 50;
 		this.BUno.HeightRequest = 40;
 		this.BUno.CanFocus = true;
 		this.BUno.Name = "BUno";
@@ -260,7 +261,7 @@ public partial class MainWindow
 		w16.Fill = false;
 		// Container child hbox4.Gtk.Box+BoxChild
 		this.BDos = new global::Gtk.Button();
-		this.BDos.WidthRequest = 43;
+		this.BDos.WidthRequest = 50;
 		this.BDos.CanFocus = true;
 		this.BDos.Name = "BDos";
 		this.BDos.UseUnderline = true;
@@ -272,7 +273,7 @@ public partial class MainWindow
 		w17.Fill = false;
 		// Container child hbox4.Gtk.Box+BoxChild
 		this.BTres = new global::Gtk.Button();
-		this.BTres.WidthRequest = 43;
+		this.BTres.WidthRequest = 50;
 		this.BTres.CanFocus = true;
 		this.BTres.Name = "BTres";
 		this.BTres.UseUnderline = true;
@@ -284,7 +285,7 @@ public partial class MainWindow
 		w18.Fill = false;
 		// Container child hbox4.Gtk.Box+BoxChild
 		this.BResta = new global::Gtk.Button();
-		this.BResta.WidthRequest = 43;
+		this.BResta.WidthRequest = 50;
 		this.BResta.CanFocus = true;
 		this.BResta.Name = "BResta";
 		this.BResta.UseUnderline = true;
@@ -304,21 +305,21 @@ public partial class MainWindow
 		this.hbox5.Name = "hbox5";
 		this.hbox5.Spacing = 6;
 		// Container child hbox5.Gtk.Box+BoxChild
-		this.BPunto = new global::Gtk.Button();
-		this.BPunto.WidthRequest = 43;
-		this.BPunto.HeightRequest = 40;
-		this.BPunto.CanFocus = true;
-		this.BPunto.Name = "BPunto";
-		this.BPunto.UseUnderline = true;
-		this.BPunto.Label = global::Mono.Unix.Catalog.GetString(".");
-		this.hbox5.Add(this.BPunto);
-		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.BPunto]));
+		this.BComa = new global::Gtk.Button();
+		this.BComa.WidthRequest = 50;
+		this.BComa.HeightRequest = 40;
+		this.BComa.CanFocus = true;
+		this.BComa.Name = "BComa";
+		this.BComa.UseUnderline = true;
+		this.BComa.Label = global::Mono.Unix.Catalog.GetString(",");
+		this.hbox5.Add(this.BComa);
+		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.BComa]));
 		w21.Position = 0;
 		w21.Expand = false;
 		w21.Fill = false;
 		// Container child hbox5.Gtk.Box+BoxChild
 		this.BCero = new global::Gtk.Button();
-		this.BCero.WidthRequest = 43;
+		this.BCero.WidthRequest = 50;
 		this.BCero.CanFocus = true;
 		this.BCero.Name = "BCero";
 		this.BCero.UseUnderline = true;
@@ -330,7 +331,7 @@ public partial class MainWindow
 		w22.Fill = false;
 		// Container child hbox5.Gtk.Box+BoxChild
 		this.BIgual = new global::Gtk.Button();
-		this.BIgual.WidthRequest = 43;
+		this.BIgual.WidthRequest = 50;
 		this.BIgual.CanFocus = true;
 		this.BIgual.Name = "BIgual";
 		this.BIgual.UseUnderline = true;
@@ -342,7 +343,7 @@ public partial class MainWindow
 		w23.Fill = false;
 		// Container child hbox5.Gtk.Box+BoxChild
 		this.BSuma = new global::Gtk.Button();
-		this.BSuma.WidthRequest = 43;
+		this.BSuma.WidthRequest = 50;
 		this.BSuma.CanFocus = true;
 		this.BSuma.Name = "BSuma";
 		this.BSuma.UseUnderline = true;
@@ -362,8 +363,8 @@ public partial class MainWindow
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 216;
-		this.DefaultHeight = 330;
+		this.DefaultWidth = 242;
+		this.DefaultHeight = 347;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.BVaciar.Clicked += new global::System.EventHandler(this.OnBVaciarClicked);
@@ -377,7 +378,7 @@ public partial class MainWindow
 		this.BUno.Clicked += new global::System.EventHandler(this.OnBUnoClicked);
 		this.BDos.Clicked += new global::System.EventHandler(this.OnBDosClicked);
 		this.BTres.Clicked += new global::System.EventHandler(this.OnBTresClicked);
-		this.BPunto.Clicked += new global::System.EventHandler(this.OnBPuntoClicked);
+		this.BComa.Clicked += new global::System.EventHandler(this.OnBComaClicked);
 		this.BCero.Clicked += new global::System.EventHandler(this.OnBCeroClicked);
 	}
 }

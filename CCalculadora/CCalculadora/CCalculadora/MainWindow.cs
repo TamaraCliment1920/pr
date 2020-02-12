@@ -1,10 +1,12 @@
 ﻿using System;
+using CCalculadora;
 using Gtk;
 
 public partial class MainWindow : Gtk.Window
 {
 
     int contador;
+    
 
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
@@ -83,15 +85,15 @@ public partial class MainWindow : Gtk.Window
     {
         String display = Pantalla.Text.ToString();
         Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + "9");
+        Pantalla.InsertText(display+"9");
     }
 
-    protected void OnBPuntoClicked(object sender, EventArgs e)
+    protected void OnBComaClicked(object sender, EventArgs e)
     {
         if (contador ==0) {
             String display = Pantalla.Text.ToString();
             Pantalla.DeleteText(0, Pantalla.Text.Length);
-            Pantalla.InsertText(display+".");
+            Pantalla.InsertText(display+",");
             contador++;
         } 
     }
@@ -104,6 +106,15 @@ public partial class MainWindow : Gtk.Window
 
     protected void OnBCClicked(object sender, EventArgs e)
     {
+
         Pantalla.DeleteText(Pantalla.Text.Length-1, Pantalla.Text.Length);
+
+        String display = Pantalla.Text.ToString();
+        if (!display.Contains(","))
+        {
+           contador--;
+        }
+
+
     }
 }

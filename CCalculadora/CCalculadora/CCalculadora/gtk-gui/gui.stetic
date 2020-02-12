@@ -6,12 +6,13 @@
   <import>
     <widget-library name="../bin/Debug/CCalculadora.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="216 330">
+  <widget class="Gtk.Window" id="MainWindow" design-size="242 347">
     <property name="MemberName" />
     <property name="WidthRequest">0</property>
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="BorderWidth">9</property>
+    <property name="Resizable">False</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="vbox1">
@@ -55,7 +56,7 @@
             <child>
               <widget class="Gtk.Button" id="BVaciar">
                 <property name="MemberName" />
-                <property name="WidthRequest">130</property>
+                <property name="WidthRequest">150</property>
                 <property name="HeightRequest">40</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
@@ -99,7 +100,7 @@
             <child>
               <widget class="Gtk.Button" id="BSiete">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="HeightRequest">40</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
@@ -117,7 +118,7 @@
             <child>
               <widget class="Gtk.Button" id="BOcho">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">8</property>
@@ -134,7 +135,7 @@
             <child>
               <widget class="Gtk.Button" id="BNueve">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">9</property>
@@ -151,7 +152,7 @@
             <child>
               <widget class="Gtk.Button" id="BDivide">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">/</property>
@@ -179,7 +180,7 @@
             <child>
               <widget class="Gtk.Button" id="BCuatro">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="HeightRequest">40</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
@@ -197,7 +198,7 @@
             <child>
               <widget class="Gtk.Button" id="BCinco">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">5</property>
@@ -214,7 +215,7 @@
             <child>
               <widget class="Gtk.Button" id="BSeis">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">6</property>
@@ -231,7 +232,7 @@
             <child>
               <widget class="Gtk.Button" id="BMultiplica">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="HeightRequest">0</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
@@ -260,7 +261,7 @@
             <child>
               <widget class="Gtk.Button" id="BUno">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="HeightRequest">40</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
@@ -278,7 +279,7 @@
             <child>
               <widget class="Gtk.Button" id="BDos">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">2</property>
@@ -295,7 +296,7 @@
             <child>
               <widget class="Gtk.Button" id="BTres">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">3</property>
@@ -312,7 +313,7 @@
             <child>
               <widget class="Gtk.Button" id="BResta">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">-</property>
@@ -338,15 +339,15 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.Button" id="BPunto">
+              <widget class="Gtk.Button" id="BComa">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="HeightRequest">40</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
-                <property name="Label" translatable="yes">.</property>
+                <property name="Label" translatable="yes">,</property>
                 <property name="UseUnderline">True</property>
-                <signal name="Clicked" handler="OnBPuntoClicked" />
+                <signal name="Clicked" handler="OnBComaClicked" />
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -358,7 +359,7 @@
             <child>
               <widget class="Gtk.Button" id="BCero">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">0</property>
@@ -375,7 +376,7 @@
             <child>
               <widget class="Gtk.Button" id="BIgual">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">=</property>
@@ -391,7 +392,7 @@
             <child>
               <widget class="Gtk.Button" id="BSuma">
                 <property name="MemberName" />
-                <property name="WidthRequest">43</property>
+                <property name="WidthRequest">50</property>
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
                 <property name="Label" translatable="yes">+</property>
