@@ -2,11 +2,15 @@
 using CCalculadora;
 using Gtk;
 
+
 public partial class MainWindow : Gtk.Window
 {
 
     int contador;
-    
+    int igual;
+    float num1, num2,resultado;
+    int op;
+    Calculadora calc = new Calculadora ();
 
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
@@ -21,9 +25,13 @@ public partial class MainWindow : Gtk.Window
 
     protected void OnBCeroClicked(object sender, EventArgs e)
     {
-        String display = Pantalla.Text.ToString();
-        Pantalla.DeleteText(0, Pantalla.Text.Length);
-        Pantalla.InsertText(display + "0");
+        if (igual == 0)
+        {
+            String display = Pantalla.Text.ToString();
+            Pantalla.DeleteText(0, Pantalla.Text.Length);
+            Pantalla.InsertText(display + "0");
+        }
+
     }
 
     protected void OnBUnoClicked(object sender, EventArgs e)
@@ -102,6 +110,8 @@ public partial class MainWindow : Gtk.Window
     {
         Pantalla.DeleteText(0, Pantalla.Text.Length);
         contador = 0;
+        igual = 0;
+        op = 0;
     }
 
     protected void OnBCClicked(object sender, EventArgs e)
@@ -112,9 +122,92 @@ public partial class MainWindow : Gtk.Window
         String display = Pantalla.Text.ToString();
         if (!display.Contains(","))
         {
-           contador--;
+           contador=0;
         }
 
 
+    }
+
+    protected void OnBDivideClicked(object sender, EventArgs e)
+    {
+        if (op==0) 
+        {
+            num1 = Convert.ToSingle(Pantalla.Text);
+            Pantalla.DeleteText(0, Pantalla.Text.Length);
+            contador = 0;
+            op = 1;
+        }
+         
+    }
+
+    protected void OnBMultiplicaClicked(object sender, EventArgs e)
+    {
+        if (op == 0)
+        {
+            num1 = Convert.ToSingle(Pantalla.Text);
+            Pantalla.DeleteText(0, Pantalla.Text.Length);
+            contador = 0;
+            op = 2;
+        }
+    }
+
+    protected void OnBRestaClicked(object sender, EventArgs e)
+    {
+        if (op == 0)
+        {
+            num1 = Convert.ToSingle(Pantalla.Text);
+            Pantalla.DeleteText(0, Pantalla.Text.Length);
+            contador = 0;
+            op = 3;
+        }
+    }
+
+    protected void OnBSumaClicked(object sender, EventArgs e)
+    {
+        if (op == 0)
+        {
+            num1 = Convert.ToSingle(Pantalla.Text);
+            Pantalla.DeleteText(0, Pantalla.Text.Length);
+            contador = 0;
+            op = 4;
+        }
+    }
+
+    protected void OnBIgualClicked(object sender, EventArgs e)
+    {
+        if (igual == 0)
+        {
+            if(op!=0)
+            {
+                num2 = Convert.ToSingle(Pantalla.Text);
+                Pantalla.DeleteText(0, Pantalla.Text.Length);
+                switch (op)
+                {
+                    case 1:
+                    resultado = calc.division(num1, num2);
+                    Pantalla.InsertText(Convert.ToString(resultado));
+                    igual = 1;
+                    break;
+                    case 2:
+                    resultado = calc.multiplicacion(num1, num2);
+                    Pantalla.InsertText(Convert.ToString(resultado));
+                    igual = 1;
+                    break;
+                    case 3:
+                    resultado = calc.resta(num1, num2);
+                    Pantalla.InsertText(Convert.ToString(resultado));
+                    igual = 1;
+                    break;
+                    case 4:
+                    resultado = calc.suma(num1, num2);
+                    Pantalla.InsertText(Convert.ToString(resultado));
+                    igual = 1;
+                    break;
+                }
+            }
+
+
+            
+        } 
     }
 }
